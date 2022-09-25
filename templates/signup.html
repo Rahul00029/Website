@@ -25,11 +25,11 @@
 <form method="post" action="signup">
     {% csrf_token %}
   <label for="username" >UserName</label>
-  <input type="text" id="username" name="username" required placeholder="Enter username">
+  <input type="text" id="username" name="username" pattern="[a-z A-Z]*" title="Enter only alphabets.." required placeholder="Enter username">
   <br>
   <br>
   <label for="firstname" >First Name</label>
-  <input type="text" id="firstname" name="firstname" required placeholder="Enter first name">
+  <input type="text" id="firstname" name="firstname" pattern="[a-z A-Z]*" title="Enter only alphabets.." required placeholder="Enter first name">
   <br>
   <br>
   <label for="lastname" >Last Name</label>
